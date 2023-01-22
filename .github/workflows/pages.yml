@@ -8,7 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Change Owner of Container Working Directory
-      run: chown root:root .
+      run: sudo chown -R root:root .
     - uses: jakejarvis/hugo-build-action@master
       with:
         args: --minify --buildDrafts
