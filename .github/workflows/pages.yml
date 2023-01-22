@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+    - name: Change Owner of Container Working Directory
+      run: chown root:root .
     - uses: jakejarvis/hugo-build-action@master
       with:
         args: --minify --buildDrafts
