@@ -1,17 +1,23 @@
 ---
 title: "Install"
 linkTitle: "Install"
-weight: 100
+weight: 10
 description: >-
      Installing BDK
 ---
 
-## Heading
+## Install pre-built binary
 
-Edit this template to create your new page.
+The latest releases binaries can be found in https://github.com/testernetes/bdk/releases
 
-* Give it a good name, ending in `.md` - e.g. `getting-started.md`
-* Edit the "front matter" section at the top of the page (weight controls how its ordered amongst other pages in the same directory; lowest number first).
-* Add a good commit message at the bottom of the page (<80 characters; use the extended description field for more detail).
-* Create a new branch so you can preview your new file and request a review via Pull Request.
+## Container Image
 
+Container images can be pulled from `ghcr.io/testernetes/bdk:latest`
+
+## Install from source
+
+To install the latest version of BDK you must have at least Go v1.19 installed and run:
+
+```
+go install github.com/testernetes/bdk@latest
+```
